@@ -1,19 +1,19 @@
 const config = {
   // Site info
-  siteTitle: "Gatsby Blog Template", // Site title.
-  siteTitleShort: "GB Template", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
+  siteTitle: "INSEA IT Blog", // Site title.
+  siteTitleShort: "IT BLOG", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "INSEA IT", // Alternative site title for SEO.
+  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://gb-template.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Ennabling INSEAistes to share knowledge", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
-  siteFBAppID: "399626517562189", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
+  siteFBAppID: "", // FB Application ID for using app insights
+  googleAnalyticsID: "", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
-  numberLatestPost: 8,
+  numberLatestPost: 3,
   postsPerPage: 6,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -22,8 +22,8 @@ const config = {
   postInCategories: "",
   postOnDate: "Posted on",
   // Use for comment
-  lazyLoadComments: true,
-  disqusShortname: "gb-template", // Disqus shortname.
+  lazyLoadComments: false,
+  disqusShortname: "INSEA_IT", // Disqus shortname.
   btnLoadComments: "Load comments",
   // Use for home page
   numberLoadmore: 6,
@@ -53,28 +53,32 @@ const config = {
   searchWidgetTitle: "Looking for?",
   searchWidgetPlaceHolder: "Enter keyword",
   searchEngineID: "008548374781244864787:9ybvtnkbt7o",
-  hasSearch: true,
+  hasSearch: false,
   // Use for links widget
   sidebarSticky: true,
   sidebarLinks: [
     {
-      label: "Complete JavaScript",
-      url: "https://completejavascript.com/"
+      label: "inseait.com",
+      url: "https://inseait.com/"
     },
     {
-      label: "Lam Pham Blog",
-      url: "https://phamvanlam.com/"
+      label: "IT village",
+      url: "https://inseait.com/itvillage/"
     },
     {
-      label: "Lam Pham Portfolio",
-      url: "http://about.phamvanlam.com/"
+      label: "Code in the dark",
+      url: "https://inseait.com/code/"
+    },
+    {
+      label: "Medium Blog",
+      url: "https://medium.com/insea-it-blog"
     },
   ],
   // Use for user info
-  userName: "Lam Pham", // Username to display in the author segment.
-  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed"s author segment
-  userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
+  userName: "INSEA IT", // Username to display in the author segment.
+  userEmail: "inseaitclub@gmail.com", // Email used for RSS feed"s author segment
+  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: "Rabat, Morocco", // User location to display in the author segment.
   userAvatar: "https://www.gravatar.com/avatar/42fd3d526fde1ef76d5002e4ebd303e9.jpg?s=300", // User avatar to display in the author segment.
   userDescription:
     "Software Engineer, Web Developer, JavaScript Lover & Blogger @completejavascript.", // User description to display in the author segment.
@@ -82,67 +86,46 @@ const config = {
   userLinks: [
     {
       label: "Email",
-      url: "mailto:completejavascript.super@gmail.com",
+      url: "mailto:inseaitclub@gmail.com",
       iconClassName: "far envelope"
     },
     {
       label: "Website",
-      url: "https://completejavascript.com/",
+      url: "https://inseait.com/",
       iconClassName: "fas globe"
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fab twitter"
     },
     { 
       label: "Facebook", 
-      url: "https://www.facebook.com/completejavascript/", 
+      url: "https://www.facebook.com/insea.it", 
       iconClassName: "fab facebook-f" 
     },
     { 
       label: "Linkedin", 
-      url: "https://www.linkedin.com/in/completejavascript/", 
+      url: "https://www.linkedin.com/company/insea-it/", 
       iconClassName: "fab linkedin-in"
     },
   ],
   // Use for navigation
-  navTitle: "GB Template",
+  navTitle: "IT Blog",
   navLinks: [
     { label: "About", url: "/about" },
-    { label: "Contact", url: "/contact" },
   ],
   // Use for footer
   socialLinks: [
     { 
-      label: "Codepen", 
-      url: "https://codepen.io/completejavascript/", 
-      iconClassName: "fab codepen" 
-    },
-    { 
-      label: "FreeCodeCamp", 
-      url: "", // Ignore 
-      iconClassName: "fab free-code-camp"
-    },
-    { 
       label: "GitHub",
-      url: "https://github.com/completejavascript",
+      url: "https://github.com/INSEAIT",
       iconClassName: "fab github"
     },
     { 
       label: "Facebook", 
-      url: "https://www.facebook.com/completejavascript/", 
+      url: "https://www.facebook.com/insea.it", 
       iconClassName: "fab facebook-f"
     },
     { 
       label: "Linkedin", 
-      url: "https://www.linkedin.com/in/completejavascript/", 
+      url: "https://www.linkedin.com/company/insea-it/", 
       iconClassName: "fab linkedin-in"
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fab twitter"
     },
     {
       label: "RSS",
@@ -151,14 +134,13 @@ const config = {
     },
   ],
   footerLinks: [
-    { label: "Home", url: "/" },
-    { label: "About", url: "/about" },
-    { label: "Contact", url: "/contact" },
-    { label: "Terms of Use", url: "/terms" },
-    { label: "Privacy Policy", url: "/privacy" },
+    { label: "website", url: "https://inseait.com" },
+    { label: "Hall of tanks", url: "https://inseait.com/thanks/" },
+    { label: "IT village", url: "https://inseait.com/itvillage/" },
+    { label: "Code in the dark", url: "https://inseait.com/code/" },
     { label: "Sitemap", url: "https://gb-template.netlify.com/sitemap.xml" },
   ],
-  copyright: "Copyright © 2019-2020 Lam Pham. Unless otherwise noted, all code MIT license.",
+  copyright: "It is through sharing knowledge,that our civilization come to be",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.
